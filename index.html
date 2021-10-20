@@ -31,12 +31,40 @@
                     </p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <form>
+                            <p>Filter Search</p>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <label for="date">Enter Date</label>
+                                    <input type="text" placeholder="1/10/2010" id="datetime">
+                                </li>
+                                <li class="list-group-item">
+                                    <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="col-md-9">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>City</th>
+                                    <th>State</th>
+                                    <th>Country</th>
+                                    <th>Shape</th>
+                                    <th>Duration</th>
+                                    <th>Comments</th>
+                                </tr>
+                            </thead>
+                            <tbody>
 
-                </div>
-                <div class="col-md-9">
-                    
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
