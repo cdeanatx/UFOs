@@ -24,7 +24,15 @@ function buildTable(data) {
 }
 
 // 1. Create a variable to keep track of all the filters as an object.
-
+var filters = [
+  {
+    datetime: "",
+    city: "",
+    state: "",
+    country: "",
+    shape: ""
+  }
+];
 
 // 3. Use this function to update the filters. 
 function updateFilters() {
@@ -49,7 +57,7 @@ function updateFilters() {
   function filterTable() {
   
     // 8. Set the filtered data to the tableData.
-    
+    let filteredData = tableData
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
@@ -60,7 +68,7 @@ function updateFilters() {
   }
   
   // 2. Attach an event to listen for changes to each filter
-  
+  d3.selectAll("input").on("keypress", updateFilters);
   
   // Build the table when the page loads
   buildTable(tableData);
