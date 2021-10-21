@@ -64,16 +64,19 @@ function filterTable() {
   // matches the filter values
   Object.keys(filters).forEach((key) => {
     // console.log(key)
-    filteredData = filteredData.filter((row) => {
-      // The conditional statement below isnt triggering, despite my verification that filter keys and values, as well as row[key], are working inside this filter function
-      row[key] === filters[key];
-    });
+    if (filters[key]) {  
+      filteredData = filteredData.filter((row) => 
+        // The conditional statement below isnt triggering, despite my verification that filter keys and values, as well as row[key], are working inside this filter function
+        row[key] === filters[key]
+        // console.log(row[key] === filters[key]);
+      );
+    }
   })
 
   // console.log(filteredData);
 
   // 10. Finally, rebuild the table using the filtered data
-  // buildTable(filteredData);
+  buildTable(filteredData);
 }
 
 // 2. Attach an event to listen for changes to each filter
