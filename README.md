@@ -8,7 +8,7 @@ The purpose of this project is to create a dynamic webpage that allows the user 
 
 5 filters were implemented to allow the user to search by date, city, state, country, or UFO shape. The user is able to apply a filter(s) by typing in the criteria in the applicable field(s) and pressing ENTER, TAB, or clicking out of the field after entering the criteria. Below, you can see the filters in action.
 
-<img src="/static/images/filters_in_action.gif" width="1200" height="615"/>
+<img src="/static/images/filters_in_action.gif" width="850" height="435"/>
 
 ## Summary
 
